@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <title>Weighted Plates Calculation Form</title>
+	  <link rel="stylesheet" href="style1.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+  
+   <header>
+         <nav class="navbar">
+            <div class="logo">
+            `<a href="index.html">Fitness Hub</a>
+            </div>
+            <ul class="nav-links">
+            <a href="index.html">Home</a>
+			<a href="contactss.html">Contact</a>
+			<a href="about.html">About Us</a>
+			<a href="evault.html">Exercise Vault</a>
+			<a href="tdee.html">TDEE Calculator</a>
+			<a href="mtgcalc.html">Mortgage Calculator</a>
+			<a href="calcform.html">Calculation Form</a>
+            </ul>
+        </nav>
+    </header>
+	
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-6 row-heading">
+          Plate Type
+        </div>
+        <div class="col-3 row-heading">
+          Quantity
+        </div>
+        <div class="col-2 row-heading">
+          Price
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          1. 45 lbs Plates
+        </div>
+        <div class="col-3">
+          <input type="number" value="0" class="qty" id="qty_45lbs"/>
+        </div>
+        <div class="col-2">
+          <input type="number" readonly value="0" id="price_45lbs"/>
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col-6">
+          2. 35 lbs Plates
+        </div>
+        <div class="col-3">
+          <input type="number" value="0" class="qty" id="qty_35lbs"/>
+        </div>
+        <div class="col-2">
+          <input type="number" readonly value="0" id="price_35lbs"/>
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col-6">
+          3. 25 lbs Plates
+        </div>
+        <div class="col-3">
+          <input type="number" class="qty" value="0" id="qty_25lbs"/>
+        </div>
+        <div class="col-2">
+          <input type="number" readonly value="0" id="price_25lbs"/>
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col-6">
+          4. 10 lbs Plates
+        </div>
+        <div class="col-3">
+          <input type="number" class="qty" value="0" id="qty_10lbs"/>
+        </div>
+        <div class="col-2">
+          <input type="number" readonly value="0" id="price_10lbs"/>
+        </div>
+      </div>
+      <div class="row my-4">
+        <div class="col-9 text-right total">
+          Total
+        </div>
+        <div class="col-2 total-val">
+          <span id="total_value">0</span>
+        </div>
+      </div>
+    </div>
+   
+    <script src="calcform.js"></script>
+  </body>
+</html>

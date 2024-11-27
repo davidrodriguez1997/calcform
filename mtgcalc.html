@@ -1,0 +1,74 @@
+	
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+         <nav class="navbar">
+            <div class="logo">
+            `<a href="index.html">Fitness Hub</a>
+            </div>
+            <ul class="nav-links">
+            <a href="index.html">Home</a>
+			<a href="contactss.html">Contact</a>
+			<a href="about.html">About Us</a>
+			<a href="evault.html">Exercise Vault</a>
+			<a href="tdee.html">TDEE Calculator</a>
+			<a href="mtgcalc.html">Mortgage Calculator</a>
+			<a href="calcform.html">Calculation Form</a>
+            </ul>
+        </nav>
+    </header>
+	
+	 <textarea readonly rows="3">
+To use the Home Mortgage Calculator, enter the mortgage amount, interest rate, and number of years. Click "Calculate" to see an estimate of your monthly payment.
+    </textarea>
+	
+	<form name="Form1">
+	
+	<table width="235" height="140">
+	<tr> 
+		<td> Mortgage: </td>
+		<td>	<input type="text" name="Amount" value=" " size="9"></td>
+	</tr>
+	<tr>
+		<td> Interest: </td>
+		<td>	<input type="text" name="Rate" value=" " size="9"></td>
+	</tr>
+	<tr>
+		<td> Years: </td>
+		<td>	
+			<select name="Years">
+				<option value="0">0</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+				<option value="25">25</option>
+				<option value="30">30</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td> 	
+		<input type="button" align="center" value="Calculate" onclick="mortCalc(Form1)">
+		</td>
+		<td>	
+		<input type="reset" value="Reset">
+		</td>
+	</tr>
+	<tr>
+		<td> Your Monthly Payment: </td>
+		<td><input type="text" name="Payment" size="9"></td>
+	</tr>
+	</table>
+	</form>
+	
+	<script src="calculator.js"></script>
+	
+	</body>
+</html>
+	

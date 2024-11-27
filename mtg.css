@@ -1,0 +1,15 @@
+table {
+            border-collapse: collapse;
+            width: 300px;
+            margin: 20px auto;
+        }
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+        input, select {
+            width: 100%;
+        }
+        input[type="button"], input[type="reset"] {
+            width: auto;
+        }
